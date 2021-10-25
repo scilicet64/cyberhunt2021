@@ -1,0 +1,206 @@
+\begin{table}[htbp]
+\begin{center}
+\caption{reconnaissance}
+\label{tab_reconnaissance}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &           * &            &    0.899 &   0.681 \\
+ SAE\_LSTM &           + &            &    0.883 &   0.596 \\
+      SAE &           + &            &    0.883 &   0.595 \\
+ SAE\_LSTM &             &            &    0.882 &   0.580 \\
+      SAE &             &            &    0.882 &   0.580 \\
+    ocSVM &             &  \checkmark &    0.816 &   0.550 \\
+    ocSVM &  percentage &  \checkmark &    0.815 &   0.550 \\
+    ocSVM &    absolute &  \checkmark &    0.776 &   0.526 \\
+      SAE &  percentage &  \checkmark &    0.715 &   0.427 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.684 &   0.404 \\
+      SAE &             &  \checkmark &    0.649 &   0.415 \\
+      SAE &    absolute &  \checkmark &    0.573 &   0.395 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.452 &   0.295 \\
+ SAE\_LSTM &             &  \checkmark &    0.429 &   0.289 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{foothold}
+\label{tab_foothold}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &           * &            &    0.944 &   0.781 \\
+ SAE\_LSTM &           * &            &    0.918 &   0.617 \\
+      SAE &           * &            &    0.917 &   0.617 \\
+    ocSVM &  percentage &  \checkmark &    0.901 &   0.722 \\
+    ocSVM &             &  \checkmark &    0.900 &   0.721 \\
+    ocSVM &    absolute &  \checkmark &    0.897 &   0.704 \\
+      SAE &    absolute &  \checkmark &    0.828 &   0.633 \\
+      SAE &             &  \checkmark &    0.816 &   0.569 \\
+      SAE &  percentage &  \checkmark &    0.816 &   0.566 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.812 &   0.582 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.765 &   0.519 \\
+ SAE\_LSTM &             &  \checkmark &    0.631 &   0.416 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{Lateral Movement}
+\label{tab_lateralmovement}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+      SAE &  percentage &  \checkmark &    0.465 &   0.569 \\
+    ocSVM &             &  \checkmark &    0.443 &   0.527 \\
+    ocSVM &  percentage &  \checkmark &    0.378 &   0.501 \\
+    ocSVM &    absolute &  \checkmark &    0.371 &   0.501 \\
+      SAE &             &  \checkmark &    0.351 &   0.494 \\
+ SAE\_LSTM &           * &            &    0.349 &   0.373 \\
+      SAE &           * &            &    0.348 &   0.373 \\
+    ocSVM &           * &            &    0.346 &   0.492 \\
+ SAE\_LSTM &             &  \checkmark &    0.329 &   0.485 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.328 &   0.493 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.215 &   0.480 \\
+      SAE &    absolute &  \checkmark &    0.204 &   0.466 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{Data Exfiltration}
+\label{tab_dataexf}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &    absolute &  \checkmark &    0.981 &   0.831 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.950 &   0.586 \\
+      SAE &    absolute &  \checkmark &    0.933 &   0.471 \\
+ SAE\_LSTM &           + &            &    0.829 &   0.234 \\
+      SAE &           + &            &    0.829 &   0.234 \\
+      SAE &             &            &    0.829 &   0.233 \\
+ SAE\_LSTM &             &            &    0.829 &   0.233 \\
+    ocSVM &           * &            &    0.828 &   0.234 \\
+    ocSVM &             &  \checkmark &    0.821 &   0.230 \\
+    ocSVM &  percentage &  \checkmark &    0.820 &   0.229 \\
+      SAE &  percentage &  \checkmark &    0.354 &   0.079 \\
+      SAE &             &  \checkmark &    0.346 &   0.078 \\
+ SAE\_LSTM &             &  \checkmark &    0.246 &   0.069 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.224 &   0.067 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{sqli}
+\label{tab_sqli}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &           * &            &    0.880 &   0.026 \\
+ SAE\_LSTM &           * &            &    0.872 &   0.023 \\
+      SAE &           * &            &    0.871 &   0.023 \\
+      SAE &             &  \checkmark &    0.749 &   0.012 \\
+    ocSVM &    absolute &  \checkmark &    0.704 &   0.011 \\
+      SAE &  percentage &  \checkmark &    0.703 &   0.010 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.496 &   0.006 \\
+ SAE\_LSTM &             &  \checkmark &    0.471 &   0.006 \\
+    ocSVM &             &  \checkmark &    0.422 &   0.006 \\
+    ocSVM &  percentage &  \checkmark &    0.421 &   0.006 \\
+      SAE &    absolute &  \checkmark &    0.407 &   0.005 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.355 &   0.005 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{portscan}
+\label{tab_portscan}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &           * &            &    0.898 &   0.675 \\
+ SAE\_LSTM &           + &            &    0.881 &   0.575 \\
+      SAE &           + &            &    0.881 &   0.575 \\
+ SAE\_LSTM &             &            &    0.880 &   0.555 \\
+      SAE &             &            &    0.880 &   0.555 \\
+    ocSVM &             &  \checkmark &    0.817 &   0.547 \\
+    ocSVM &  percentage &  \checkmark &    0.817 &   0.546 \\
+    ocSVM &    absolute &  \checkmark &    0.779 &   0.526 \\
+      SAE &  percentage &  \checkmark &    0.714 &   0.420 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.681 &   0.395 \\
+      SAE &             &  \checkmark &    0.647 &   0.409 \\
+      SAE &    absolute &  \checkmark &    0.566 &   0.380 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.466 &   0.300 \\
+ SAE\_LSTM &             &  \checkmark &    0.425 &   0.282 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{xss}
+\label{tab_xss}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+ SAE\_LSTM &           * &            &    0.843 &   0.003 \\
+    ocSVM &           * &            &    0.842 &   0.003 \\
+      SAE &           * &            &    0.842 &   0.003 \\
+      SAE &             &  \checkmark &    0.745 &   0.002 \\
+      SAE &  percentage &  \checkmark &    0.678 &   0.001 \\
+    ocSVM &    absolute &  \checkmark &    0.570 &   0.001 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.454 &   0.001 \\
+ SAE\_LSTM &             &  \checkmark &    0.434 &   0.001 \\
+      SAE &    absolute &  \checkmark &    0.360 &   0.001 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.330 &   0.001 \\
+    ocSVM &             &  \checkmark &    0.170 &   0.001 \\
+    ocSVM &  percentage &  \checkmark &    0.167 &   0.001 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\caption{bruteforce}
+\label{tab_bruteforce}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Modelname} & \textbf{Payload} & \textbf{Scaling} & \textbf{ROC\_AUC} & \textbf{PR\_AUC} \\
+\hline
+    ocSVM &           * &            &    0.894 &   0.049 \\
+ SAE\_LSTM &           * &            &    0.882 &   0.041 \\
+      SAE &           * &            &    0.882 &   0.041 \\
+      SAE &             &  \checkmark &    0.786 &   0.025 \\
+      SAE &  percentage &  \checkmark &    0.770 &   0.021 \\
+    ocSVM &    absolute &  \checkmark &    0.689 &   0.019 \\
+ SAE\_LSTM &  percentage &  \checkmark &    0.635 &   0.015 \\
+ SAE\_LSTM &             &  \checkmark &    0.536 &   0.012 \\
+    ocSVM &             &  \checkmark &    0.533 &   0.014 \\
+    ocSVM &  percentage &  \checkmark &    0.532 &   0.014 \\
+ SAE\_LSTM &    absolute &  \checkmark &    0.316 &   0.008 \\
+      SAE &    absolute &  \checkmark &    0.287 &   0.007 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+

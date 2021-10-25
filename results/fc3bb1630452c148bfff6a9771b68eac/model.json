@@ -1,0 +1,1 @@
+{"_epochs": 100, "_batchsize": 20, "modelname": "SAE", "dataDescription": "hunt2021_model", "datasetType": "hunt2021", "nTimesteps": 3, "useCache": true, "usePayload": false, "useSequence": false, "useFeatureScaling": false, "trainingFile": "data/testfiles/custom_normal_public.csv"}

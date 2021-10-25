@@ -1,0 +1,150 @@
+
+testname: custom_reconnaissance
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+152     ocSVM           *               0.899   0.681
+88   SAE_LSTM           +               0.883   0.596
+40        SAE           +               0.883   0.595
+56   SAE_LSTM                           0.882   0.580
+8         SAE                           0.882   0.580
+144     ocSVM              checkmark    0.816   0.550
+176     ocSVM  percentage  checkmark    0.815   0.550
+160     ocSVM    absolute  checkmark    0.776   0.526
+32        SAE  percentage  checkmark    0.715   0.427
+80   SAE_LSTM  percentage  checkmark    0.684   0.404
+0         SAE              checkmark    0.649   0.415
+16        SAE    absolute  checkmark    0.573   0.395
+64   SAE_LSTM    absolute  checkmark    0.452   0.295
+48   SAE_LSTM              checkmark    0.429   0.289
+
+
+
+
+testname: custom_foothold
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+158     ocSVM           *               0.944   0.781
+62   SAE_LSTM           *               0.918   0.617
+14        SAE           *               0.917   0.617
+182     ocSVM  percentage  checkmark    0.901   0.722
+150     ocSVM              checkmark    0.900   0.721
+166     ocSVM    absolute  checkmark    0.897   0.704
+22        SAE    absolute  checkmark    0.828   0.633
+6         SAE              checkmark    0.816   0.569
+38        SAE  percentage  checkmark    0.816   0.566
+70   SAE_LSTM    absolute  checkmark    0.812   0.582
+86   SAE_LSTM  percentage  checkmark    0.765   0.519
+54   SAE_LSTM              checkmark    0.631   0.416
+
+
+
+
+testname: custom_lateralmovement
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+39        SAE  percentage  checkmark    0.465   0.569
+151     ocSVM              checkmark    0.443   0.527
+183     ocSVM  percentage  checkmark    0.378   0.501
+167     ocSVM    absolute  checkmark    0.371   0.501
+7         SAE              checkmark    0.351   0.494
+63   SAE_LSTM           *               0.349   0.373
+15        SAE           *               0.348   0.373
+175     ocSVM           *               0.346   0.492
+55   SAE_LSTM              checkmark    0.329   0.485
+87   SAE_LSTM  percentage  checkmark    0.328   0.493
+71   SAE_LSTM    absolute  checkmark    0.215   0.480
+23        SAE    absolute  checkmark    0.204   0.466
+
+
+
+
+testname: custom_dataexf
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+165     ocSVM    absolute  checkmark    0.981   0.831
+69   SAE_LSTM    absolute  checkmark    0.950   0.586
+21        SAE    absolute  checkmark    0.933   0.471
+93   SAE_LSTM           +               0.829   0.234
+29        SAE           +               0.829   0.234
+13        SAE                           0.829   0.233
+61   SAE_LSTM                           0.829   0.233
+189     ocSVM           *               0.828   0.234
+149     ocSVM              checkmark    0.821   0.230
+181     ocSVM  percentage  checkmark    0.820   0.229
+37        SAE  percentage  checkmark    0.354   0.079
+5         SAE              checkmark    0.346   0.078
+53   SAE_LSTM              checkmark    0.246   0.069
+85   SAE_LSTM  percentage  checkmark    0.224   0.067
+
+
+
+
+testname: custom_sqli
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+169     ocSVM           *               0.880   0.026
+73   SAE_LSTM           *               0.872   0.023
+41        SAE           *               0.871   0.023
+1         SAE              checkmark    0.749   0.012
+161     ocSVM    absolute  checkmark    0.704   0.011
+33        SAE  percentage  checkmark    0.703   0.010
+81   SAE_LSTM  percentage  checkmark    0.496   0.006
+49   SAE_LSTM              checkmark    0.471   0.006
+145     ocSVM              checkmark    0.422   0.006
+177     ocSVM  percentage  checkmark    0.421   0.006
+17        SAE    absolute  checkmark    0.407   0.005
+65   SAE_LSTM    absolute  checkmark    0.355   0.005
+
+
+
+
+testname: custom_portscan
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+154     ocSVM           *               0.898   0.675
+74   SAE_LSTM           +               0.881   0.575
+42        SAE           +               0.881   0.575
+58   SAE_LSTM                           0.880   0.555
+10        SAE                           0.880   0.555
+146     ocSVM              checkmark    0.817   0.547
+178     ocSVM  percentage  checkmark    0.817   0.546
+162     ocSVM    absolute  checkmark    0.779   0.526
+34        SAE  percentage  checkmark    0.714   0.420
+82   SAE_LSTM  percentage  checkmark    0.681   0.395
+2         SAE              checkmark    0.647   0.409
+18        SAE    absolute  checkmark    0.566   0.380
+66   SAE_LSTM    absolute  checkmark    0.466   0.300
+50   SAE_LSTM              checkmark    0.425   0.282
+
+
+
+
+testname: custom_xss
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+59   SAE_LSTM           *               0.843   0.003
+187     ocSVM           *               0.842   0.003
+11        SAE           *               0.842   0.003
+3         SAE              checkmark    0.745   0.002
+35        SAE  percentage  checkmark    0.678   0.001
+163     ocSVM    absolute  checkmark    0.570   0.001
+83   SAE_LSTM  percentage  checkmark    0.454   0.001
+51   SAE_LSTM              checkmark    0.434   0.001
+19        SAE    absolute  checkmark    0.360   0.001
+67   SAE_LSTM    absolute  checkmark    0.330   0.001
+147     ocSVM              checkmark    0.170   0.001
+179     ocSVM  percentage  checkmark    0.167   0.001
+
+
+
+
+testname: custom_bruteforce
+    Modelname     Payload    Scaling  ROC_AUC  PR_AUC
+156     ocSVM           *               0.894   0.049
+92   SAE_LSTM           *               0.882   0.041
+28        SAE           *               0.882   0.041
+4         SAE              checkmark    0.786   0.025
+36        SAE  percentage  checkmark    0.770   0.021
+164     ocSVM    absolute  checkmark    0.689   0.019
+84   SAE_LSTM  percentage  checkmark    0.635   0.015
+52   SAE_LSTM              checkmark    0.536   0.012
+148     ocSVM              checkmark    0.533   0.014
+180     ocSVM  percentage  checkmark    0.532   0.014
+68   SAE_LSTM    absolute  checkmark    0.316   0.008
+20        SAE    absolute  checkmark    0.287   0.007
+
+
+
