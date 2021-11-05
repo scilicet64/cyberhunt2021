@@ -43,7 +43,14 @@ def getInput(datasetType, dataset, start, nSamples, nColumns, usePayload):
             X = np.delete(X, range(ixPayload0,(ixPayload0 + 2+256)), axis=1)
 
     if 'unb15' not in datasetType and 'cicids2018' not in datasetType:
-        X = np.delete(X, [0, 6, 22, 23, 25, 27, 30, 32, 58, 79], axis=1)
+        dellist = []
+        for id in ['Flow ID','Timestamp','Flow IAT Mean','Flow IAT Std','Flow IAT Min','Fwd IAT Mean',"Fwd IAT Min","Bwd IAT Mean","Average Packet Size","Idle Mean"]:
+            ix= dataset.columns.get_loc(id)
+            if ix >= 0:
+                dellist = dellist + [ix]
+            else:
+                print("WARNING requested deletion of id:", id, " failed")
+        X = np.delete(X, dellist, axis=1)
         for i in range(len(X)):
             X[i, 0] = int(ipaddress.ip_address(X[i, 0]))
             X[i, 2] = int(ipaddress.ip_address(X[i, 2]))
